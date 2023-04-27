@@ -1,9 +1,6 @@
 pipeline {
 	agent any
 
-	environment {
-		mavenHome = tool 'maven3'
-	}
 
 	tools {
 		jdk 'jdk-1.8'
