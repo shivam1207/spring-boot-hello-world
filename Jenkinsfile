@@ -28,3 +28,5 @@ pipeline {
 		}
 	}
 }
+def repositorySystemSession = buildStepInfo.getRepositorySystemSession()
+def localRepository = repositorySystemSession.localRepositoryManager.localRepository
