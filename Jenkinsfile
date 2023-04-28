@@ -23,7 +23,7 @@ pipeline {
 
 		stage('Deploy') {
 			steps {
-			    bat 'mvn jar:jar deploy:deploy'
+			    bat 'java -jar spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar'
 			}
 		}
 	}
