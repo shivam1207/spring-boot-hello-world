@@ -11,19 +11,19 @@ pipeline {
 
 		stage('Build'){
 			steps {
-				sh 'mvn clean install -DskipTests'
+				bat 'mvn clean install -DskipTests'
 			}
 		}
 
 		stage('Test'){
 			steps{
-				sh 'mvn test'
+				bat 'mvn test'
 			}
 		}
 
 		stage('Run') {
 			steps {
-			    sh 'java -jar target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar'
+			    bat 'java -jar target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar'
 			}
 		}
 	}
