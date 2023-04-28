@@ -5,6 +5,7 @@ pipeline {
 	tools {
 		jdk 'jdk-1.8'
 		maven 'maven3'
+		mavenLocalRepo '.repository'
 	}
 
 	stages {
