@@ -5,10 +5,10 @@ FROM adoptopenjdk:11-jre-hotspot
 WORKDIR /app
 
 # Copy the Spring Boot JAR file to the container
-COPY target/my-spring-boot-app.jar my-spring-boot-app.jar
+COPY target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port 8084
+EXPOSE 8084
 
 # Set the command to run the Spring Boot JAR file
-CMD ["java", "-jar", "my-spring-boot-app.jar"]
+CMD ["java", "-jar", "spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar"]
